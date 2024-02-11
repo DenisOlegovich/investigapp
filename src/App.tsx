@@ -11,5 +11,12 @@ import {
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { Logo } from "./Logo";
+import Header from "./components/Header";
+import Portfolio from "./components/Portfolio";
 
-export const App = () => <ChakraProvider theme={theme}></ChakraProvider>;
+export const App = () => (
+  <ChakraProvider theme={theme}>
+    <Header />
+    <Portfolio />
+  </ChakraProvider>
+);
