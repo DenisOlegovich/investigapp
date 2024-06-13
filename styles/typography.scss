@@ -1,0 +1,67 @@
+@tailwind base;
+
+@layer base {
+    .hero {
+        @apply text-7xl leading-none font-semibold md:text-9xl;
+    }
+    .h1 {
+        @apply text-6xl leading-none font-semibold md:text-8xl;
+    }
+    .h2 {
+        @apply text-3xl leading-2xs font-semibold md:text-7xl md:leading-base;
+    }
+    .h3 {
+        @apply text-2xl leading-2xs font-semibold md:text-5xl md:leading-base;
+    }
+    .h4 {
+        @apply text-lg leading-base font-semibold md:text-2xl md:leading-lg;
+    }
+    .h5 {
+        @apply text-xl leading-base font-semibold;
+    }
+    .lead {
+        @apply text-lg leading-xl font-normal md:text-4xl md:leading-lg;
+    }
+    .body {
+        @apply text-xl leading-lg font-normal;
+    }
+    .body_bold {
+        @apply text-xl leading-lg font-semibold;
+    }
+    .body-s {
+        @apply text-base leading-xl font-normal;
+    }
+    .body-s_bold {
+        @apply text-base leading-xl font-semibold;
+    }
+    .body-xs {
+        @apply text-sm leading-lg font-normal;
+    }
+    .signature {
+        @apply text-xs leading-xl font-normal text-grey-dark;
+    }
+    .input {
+        @apply text-base leading-xs font-normal;
+    }
+    .button {
+        @apply text-lg leading-xs font-normal md:text-base;
+    }
+    .table {
+        @apply text-base leading-base font-normal md:text-lg md:leading-lg;
+    }
+    .table_bold {
+        @apply text-base leading-base font-semibold md:text-lg md:leading-lg;
+    }
+    .table-s {
+        @apply text-sm leading-xl font-normal md:text-base md:leading-lg;
+    }
+    .table-s_bold {
+        @apply text-sm leading-xl font-semibold md:text-base md:leading-lg;
+    }
+    .factorid {
+        @apply text-7xl leading-none font-semibold md:text-8xl;
+    }
+    .factorid-s {
+        @apply text-3xl leading-2xs font-semibold md:text-7xl md:leading-base;
+    }
+}

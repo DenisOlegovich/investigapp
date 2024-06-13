@@ -1,0 +1,22 @@
+import { Pages, PagesDisplayNames } from '@/constants'
+import { cards, cardsCommonProps } from './constants'
+import { cn } from '@/utils'
+import ContentLimiter from '@/components/common/ContentLimiter'
+import Card from '@/components/Card'
+
+export default function Page() {
+    return (
+        <ContentLimiter className={cn('body-s md:body pt-[9.6rem] md:pt-[12rem]', 'pb-[3rem] md:pb-[10rem]')}>
+            <h1 className="h1">{PagesDisplayNames[Pages.services]}</h1>
+            <div className={cn('mt-2xl md:mt-4xl', 'flex flex-wrap', 'gap-sm md:gap-base lg:gap-lg')}>
+                {cards.map(({ ...props }, idx) => (
+                    <Card
+                        key={idx}
+                        {...cardsCommonProps}
+                        {...props}
+                    />
+                ))}
+            </div>
+        </ContentLimiter>
+    )
+}

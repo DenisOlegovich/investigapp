@@ -1,0 +1,37 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs'
+import spacing from '../spacing'
+
+<Meta title="Theme/Spacings" />
+
+# Spacings
+
+Все измеряется `rems`, где `1rem = 10px`. Spacings в Tailwind CSS можно использовать например, как
+
+`p-[n], px-[n], py-[n]` = padding
+
+`m-[n], mx-[n], my-[n]` = margin
+
+`space-y-[n]` or `space-x-[n]` = margin между элементами
+
+`w-[n]` or `h-[n]` = width или height
+
+<table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>value</th>
+            <th>px</th>
+        </tr>
+    </thead>
+    <tbody>
+        {Object.entries(spacing).map(([key, value]) => (
+            <tr>
+                <td>{key}</td>
+                <td align="center">{value}</td>
+                <td align="center">
+                    {+value.replace('rem', '') * 10}px
+                </td>
+            </tr>
+        ))}
+    </tbody>
+</table>

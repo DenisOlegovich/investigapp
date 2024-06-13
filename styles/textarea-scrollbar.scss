@@ -1,0 +1,30 @@
+@tailwind components;
+
+@layer components {
+    .textarea-scrollbar {
+        &::-webkit-scrollbar {
+            width: 0.2rem;
+            display: block;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #03469499;
+            outline: 1px #1f469499;
+            border-radius: 999px;
+        }
+
+        &::-webkit-scrollbar-track-piece:end {
+            background-color: transparent;
+            margin-bottom: 1.2rem;
+        }
+
+        &::-webkit-scrollbar-track-piece:start {
+            background-color: transparent;
+            margin-top: 1.2rem;
+        }
+    }
+}

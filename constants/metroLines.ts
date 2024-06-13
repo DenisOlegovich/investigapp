@@ -1,0 +1,28 @@
+import { staticMosmetroUrl } from '@/constants'
+
+export const metroLineIcons = {
+    1: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_1.svg`,
+    2: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_2.svg`,
+    3: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_3.svg`,
+    4: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_4.svg`,
+    '-1': `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_4a.svg`,
+    6: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_5.svg`,
+    5: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_6.svg`,
+    8: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_7.svg`,
+    9: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_8.svg`,
+    13: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_8a.svg`,
+    7: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_9.svg`,
+    10: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_10.svg`,
+    11: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_11.svg`,
+    '-2': `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_11a.svg`,
+    12: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_12.svg`,
+    '-3': `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_13.svg`,
+    16: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_14.svg`,
+    17: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_15.svg`,
+    14: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_d1.svg`,
+    15: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_d2.svg`,
+    36: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_d3.svg`,
+    37: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_d4.svg`,
+    38: `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_d4a.svg`,
+    '-4': `${staticMosmetroUrl}/shared/imgs/scheme/line-icons/line_d5.svg`,
+}

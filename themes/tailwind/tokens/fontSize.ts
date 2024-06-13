@@ -1,0 +1,15 @@
+export default {
+    xs: '1.2rem',
+    sm: '1.4rem',
+    base: '1.6rem',
+    lg: '1.8rem',
+    xl: '2rem',
+    '2xl': '2.2rem',
+    '3xl': '2.6rem',
+    '4xl': '2.8rem',
+    '5xl': '3rem',
+    '6xl': '3.2rem',
+    '7xl': '4rem',
+    '8xl': '6.2rem',
+    '9xl': '8.7rem',
+}
