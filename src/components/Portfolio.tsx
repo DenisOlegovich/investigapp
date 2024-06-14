@@ -1,7 +1,13 @@
 import { Box } from "@chakra-ui/react";
 import PortfolioCard from "./PortfolioCard";
 import StockData from "./StockData";
-const secPapers: { name: string; price: number }[] = [
+
+export type secPapersProps = {
+  name: string;
+  price: number;
+};
+
+const secPapers: secPapersProps[] = [
   {
     name: "bitcoin",
     price: 1000,
@@ -32,14 +38,17 @@ fetch(`https://openapiv1.coinstats.app/coins/${stockName}`, options)
   .then((response) => response.json())
   .then((response) => console.log(response))
   .catch((err) => console.error(err));
+  
 function Portfolio() {
   return (
-    <Box maxW="500px">
-      {secPapers.map((item, index) => (
-        <PortfolioCard secPaper={item} key={index} />
+    <>
+      {secPapers.map((item: any, index: any) => (
+        <div key={index}>
+          <p>{item.name}</p>
+          <p>{item.price}</p>
+        </div>
       ))}
-      <StockData stockName="bitcoin" />
-    </Box>
+    </>
   );
 }
 
