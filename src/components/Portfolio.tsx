@@ -24,7 +24,7 @@ const secPapers: secPapersProps[] = [
 
 // const secPapers = ["Bitcoin", "Ethereum", "Apple"];
 
-const stockName = "Bitcoin";
+const stockName = "bitcoin";
 
 const options = {
   method: "GET",
@@ -46,6 +46,7 @@ function Portfolio() {
         <div key={index}>
           <p>{item.name}</p>
           <p>{item.price}</p>
+          
         </div>
       ))}
     </>

@@ -28,7 +28,7 @@ const StockData: React.FC<{ stockName: string }> = ({ stockName }) => {
     fetchData();
   }, [stockName]);
 
-  return <div></div>;
+  return <div>{data}</div>;
 };
 
 export default StockData;
